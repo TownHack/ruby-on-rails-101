@@ -1,0 +1,10 @@
+<% if current_user.id == @twoot.user.id %>
+<h1>Editing twoot</h1>
+
+<%= render 'form' %>
+
+<%= link_to 'Show', @twoot %> |
+<%= link_to 'Back', twoots_path %>
+<% else %>
+You need to be this tweet's owner to edit it!<br>
+<% end %>

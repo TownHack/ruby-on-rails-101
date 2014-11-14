@@ -1,0 +1,9 @@
+<% if current_user %>
+<h1>New twoot</h1>
+
+<%= render 'form' %>
+
+<%= link_to 'Back', twoots_path %>
+<% else %>
+You need to be logged in to view this page!<br><%= link_to "Sign in", new_user_session_path %>
+<% end %> 
